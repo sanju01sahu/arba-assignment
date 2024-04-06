@@ -22,7 +22,7 @@ export const signup = (user:User) => (dispatch :Dispatch) => {
   return (
     dispatch({type:FETCH_RQUEST}),
     axios.post(`${api}`,user)
-    .then(res => dispatch({type:SIGNUP_SUCCESS}))
-    .catch(err=> dispatch({type:FETCH_FAILURE}))
+    .then(() => dispatch({type:SIGNUP_SUCCESS}))
+    .catch(()=> dispatch({type:FETCH_FAILURE}))
   )
 };

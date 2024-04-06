@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import styled from "styled-components";
-import { login } from "../store/authReducer/action";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useRef } from "react";
-import { Dispatch } from "redux";
+import { Link, useNavigate } from "react-router-dom";
+
 import { LoginUser } from "../Constants";
-import { AppDispatch, RootState } from "../store/store";
+import { AppDispatch } from "../store/store";
 import { getLogin } from "../store/authReducer/authSlice";
 
 const initial: LoginUser = {
@@ -15,12 +13,9 @@ const initial: LoginUser = {
 };
 
 function Login() {
-  const navigate = useNavigate();
-  const location = useLocation();
   const navi = useNavigate()
   const dispatch = useDispatch<AppDispatch>();
   const [input, setInput] = useState<LoginUser>(initial);
-  const a = useSelector<RootState>((store)=>store.authReducer)
 
   const handleChange = (e: React.FormEvent<HTMLInputElement>): void => {
     const name = e.currentTarget.name;

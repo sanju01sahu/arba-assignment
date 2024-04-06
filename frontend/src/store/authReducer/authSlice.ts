@@ -1,5 +1,5 @@
 import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { Expenses, LoginUser, SingleUser } from "../../Constants";
+import { LoginUser, SingleUser } from "../../Constants";
 import axios from "axios";
 
 interface State {
