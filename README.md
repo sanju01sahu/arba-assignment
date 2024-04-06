@@ -52,6 +52,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Credentials
 The App doesen't Use Credentials Yet. It will be updated when functionality is added.
 
+## Frontend .env Variables
+- MONGODB_URI=mongodb+srv://sanju01sahu:sanju01sahu@cluster0.r89pjhs.mongodb.net/cwB31?retryWrites=true&w=majority
+- JWT_SECRET=jwt_secret
+- PORT=3000
+
 
 
 
