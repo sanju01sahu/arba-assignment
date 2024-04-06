@@ -1,18 +1,14 @@
-import React from 'react'
-
-// import styled from 'styled-components'
+import styled from 'styled-components'
 
 function Navbar() {
   return (
-    <div className='navbox'>
+    <DIV>
+      <div className='navbox'>
       <div className='navbar'>
-      <div className='logo'>
-        <a href="/"><img src="" alt="Logo" /></a>
-      </div>
+      
         <div className='homepage'>
         <a href="/">Home</a>
-        <a href="">Transactions</a>
-        <a href="/subscriptions">Subscriptions</a>
+        
         {/* <a href="">Instructions</a> */}
         <a href="">About</a>
         </div>
@@ -21,20 +17,21 @@ function Navbar() {
         </div>
       </div>
     </div>
+    </DIV>
   )
 }
 
 export default Navbar
 
 
-// const DIV= styled.div`
-//   .navbar {
-//   height: 60px;
-//   background-color: #89CFF3;
-//   color: whitesmoke;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   /* padding-left: 160px; */
-// }
-// 
+const DIV= styled.div`
+  .navbar {
+  height: 60px;
+  background-color: #89CFF3;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-left: 160px; */
+}
+`
